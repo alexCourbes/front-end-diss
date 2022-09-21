@@ -14,7 +14,7 @@ import makeStyles from "@mui/material/styles/makeStyles.js";
 export const NavBar = () => {
 
     return (
-        <AppBar position="absolute">
+        <AppBar position="absolute" maxWidth="8np0%">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 3 }} />
