@@ -1,7 +1,7 @@
 
 
 import React, {Component} from "react";
-import {NavBar} from "../Components/NavBar.js";
+import NavBar from "../Components/NavBar.js";
 
 class HomePage extends Component {
     render() {
