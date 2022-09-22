@@ -14,28 +14,19 @@ import makeStyles from "@mui/material/styles/makeStyles.js";
 export const NavBar = () => {
 
     return (
-        <AppBar position="absolute" maxWidth="8np0%">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 3 }} />
-
-                        <Breadcrumbs aria-label="breadcrumb">
-                            <Link underline="hover" color="inherit" href="/">
-                                MUI
-                            </Link>
-                            <Link
-                                underline="hover"
-                                color="inherit"
-                                href="/material-ui/getting-started/installation/"
-                            >
-                                Core
-                            </Link>
-                            <Typography color="text.primary">Breadcrumbs</Typography>
-                        </Breadcrumbs>
-
-
-                </Toolbar>
-            </Container>
-        </AppBar>
+        <Breadcrumbs aria-label="breadcrumb">
+  <StyledBreadcrumb
+    component="a"
+    href="#"
+    label="Home"
+    icon={<HomeIcon fontSize="small" />}
+  />
+  <StyledBreadcrumb component="a" href="#" label="Catalog" />
+  <StyledBreadcrumb
+    label="Accessories"
+    deleteIcon={<ExpandMoreIcon />}
+    onDelete={handleClick}
+  />
+</Breadcrumbs>
     )
 }
