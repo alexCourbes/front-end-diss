@@ -3,14 +3,15 @@
 import React, {Component} from "react";
 import NavBar from "../Components/NavBar.js";
 import {Button, Container, Stack} from "@mui/material";
+import NavBarStyles from  "../Styles/NavBarStyles.css";
 
 class HomePage extends Component {
     render() {
         return (
-          <div>
+          <div  style={{ backgroundColor: "#F9DB6D", paddingBottom: "100px"}}>
              <NavBar/>
-              <Container style={{backgroundColor: '#F1C40F'}} maxWidth="100%" >
-                  <p>Hello</p>
+              <Container minWidth="20%" style={{paddingTop: "100px"}}>
+
                   <Stack spacing={2}>
                       <input
                           accept="image/*"
@@ -26,7 +27,9 @@ class HomePage extends Component {
                           </Button>
                       </label>
 
-                      <Button variant="contained" color="primary">Translate the Document </Button>
+
+                      <Button   variant="contained" color="primary">Translate the Document </Button>
+
                 </Stack>
               </Container>
           </div>

@@ -65,7 +65,7 @@ function handleClick(event) {
 }
 export default function NavBar() {
     return (
-        <div role="presentation" onClick={handleClick}>
+        <div role="presentation" onClick={handleClick} style={{padding: "30px"}} >
             <Breadcrumbs aria-label="breadcrumb">
                 <StyledBreadcrumb
                     component="a"
