@@ -65,7 +65,7 @@ function handleClick(event) {
 }
 export default function NavBar() {
     return (
-        <div role="presentation" onClick={handleClick} style={{position:"absolute",top:"30px",left:"37px"}}>
+        <div role="presentation" onClick={handleClick}>
             <Breadcrumbs aria-label="breadcrumb">
                 <StyledBreadcrumb
                     component="a"
@@ -73,7 +73,8 @@ export default function NavBar() {
                     label="Home"
                     icon={<HomeIcon fontSize="small" />}
                 />
-                <StyledBreadcrumb component="a" href="#" label="Catalog" />
+                <StyledBreadcrumb component="a" href="#" label="Past Documents" />
+
                 <StyledBreadcrumb
                     label="Accessories"
                     deleteIcon={<ExpandMoreIcon />}
