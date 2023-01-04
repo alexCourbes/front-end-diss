@@ -76,7 +76,7 @@ export default function NavBar() {
                 <StyledBreadcrumb component="a" href="#" label="Past Documents" />
 
                 <StyledBreadcrumb
-                    label="Accessories"
+                    label="More:"
                     deleteIcon={<ExpandMoreIcon />}
                     onDelete={handleClick}
                 />
